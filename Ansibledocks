@@ -1,0 +1,47 @@
+---------
+control-Node
+-------------
+    sudo apt update
+    sudo apt install software-properties-common
+    sudo add-apt-repository --yes --update ppa:ansible/ansible
+    sudo apt install ansible -y
+    ansible --version
+
+    -----------------
+    python3 --version
+    sudo apt install python3-pip
+    ----------------------------
+    sudo nano /etc/ssh/sshd_config
+    # Change PasswordAuthentication to yes
+    sudo systemctl restart sshd
+    -------------------
+    Create a user called as prajwal
+    sudo adduser prajwal
+    Lets make prajwal administrator
+    ------------------
+    sudo visudo
+
+    # Allow members of group sudo to execute any command
+
+    prajwal ALL=(ALL:ALL) NOPASSWD:ALL
+
+
+    Node Install
+    ------------
+    sudo nano /etc/ssh/sshd_config
+    # Change PasswordAuthentication to yes
+    sudo systemctl restart sshd
+    -------------------
+    Create a user called as prajwal
+    sudo adduser prajwal
+    Lets make prajwal administrator
+    ------------------
+    sudo visudo
+
+    # Allow members of group sudo to execute any command
+
+    prajwal ALL=(ALL:ALL) NOPASSWD:ALL
+
+
+
+
